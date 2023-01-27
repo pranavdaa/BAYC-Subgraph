@@ -1,0 +1,16 @@
+{
+  "name": "bayc",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ pranavdaa/bayc",
+    "create-local": "graph create --node http://localhost:8020/ pranavdaa/bayc",
+    "remove-local": "graph remove --node http://localhost:8020/ pranavdaa/bayc",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 pranavdaa/bayc"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.27.0",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
