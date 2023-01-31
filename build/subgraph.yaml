@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: Contract
@@ -18,8 +18,8 @@ dataSources:
         - User
       abis:
         - name: Contract
-          file: ./abis/Contract.json
+          file: Contract/abis/Contract.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-      file: ./src/mapping.ts
+      file: Contract/Contract.wasm

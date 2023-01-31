@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /opt/homebrew/opt/libpq/bin:/Users/mac/google-cloud-sdk/bin:/Users/mac/.local/share/solana/install/active_release/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/mac/.cargo/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  19.5.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://raw.githubusercontent.com/hugomrdias/concat-stream/057bc7b5d6d8df26c8cf00a3f151b6721a0a8034/package.json: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:141322:19)
+      at listOnTimeout (node:internal/timers:568:17)
+      at process.processTimers (node:internal/timers:511:7)
+
+npm manifest: 
+  {
+    "name": "bayc",
+    "license": "UNLICENSED",
+    "scripts": {
+      "codegen": "graph codegen",
+      "build": "graph build",
+      "deploy": "graph deploy --node https://api.thegraph.com/deploy/ pranavdaa/bayc",
+      "create-local": "graph create --node http://localhost:8020/ pranavdaa/bayc",
+      "remove-local": "graph remove --node http://localhost:8020/ pranavdaa/bayc",
+      "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 pranavdaa/bayc"
+    },
+    "dependencies": {
+      "@graphprotocol/graph-cli": "0.27.0",
+      "@graphprotocol/graph-ts": "0.24.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
